@@ -1,0 +1,16 @@
+{
+    "name": "joshuaestes/puppet-apache",
+    "type": "puppet-module",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/JoshuaEstes/ComposerInstallerPuppet.git"
+        }
+    ],
+    "requires": {
+        "joshuaestes/composer-installer-puppet": "*"
+    },
+    "extra": {
+        "puppet-module": "apache"
+    }
+}
