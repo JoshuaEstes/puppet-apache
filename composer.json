@@ -1,13 +1,15 @@
 {
     "name": "joshuaestes/puppet-apache",
     "type": "puppet-module",
+    "license": "MIT",
+    "description": "Puppet module to manage apache2",
     "repositories": [
         {
             "type": "git",
             "url": "git://github.com/JoshuaEstes/ComposerInstallerPuppet.git"
         }
     ],
-    "requires": {
+    "require": {
         "joshuaestes/composer-installer-puppet": "*"
     },
     "extra": {
