@@ -1,0 +1,17 @@
+# Managed by Puppet
+
+<VirtualHost *:<%= port %>>
+    ServerName <%= name %>
+<% if server_alias != '' -%>
+    ServerAlias <%= server_alias %>
+<% end -%>
+    DocumentRoot <%= document_root %>
+    <Directory <%= document_root %>>
+        Options <%= options %>
+        AllowOverride <%= allow_override %>
+        Order allow,deny
+        Allow from All
+    </Directory>
+
+    ServerSignature Off
+</VirtualHost>
