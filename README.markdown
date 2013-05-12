@@ -25,6 +25,13 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
     ...
 
 # Basic Usage
+## Configure apache configuration
+
+@todo
+
+## Configure a virtual host
+
+@todo
 
 # License
 
