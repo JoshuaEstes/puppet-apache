@@ -27,11 +27,13 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
 # Basic Usage
 ## Configure apache configuration
 
-@todo
+    class { 'apache': }
 
 ## Configure a virtual host
 
-@todo
+    apache::vhost { 'example.com':
+        document_root => '/var/www/example.com',
+    }
 
 # License
 
