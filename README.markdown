@@ -22,12 +22,17 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
         ...
         "joshuaestes/puppet-apache": "*"
     },
+    "extra": {
+        ...
+        "puppet-modules-path": "app/Resources/puppet/modules"
+    },
     ...
 
 # Basic Usage
 ## Configure apache configuration
 
     class { 'apache': }
+    apache::mod { 'php5': }
 
 ## Configure a virtual host
 

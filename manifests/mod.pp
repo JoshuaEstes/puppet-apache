@@ -21,7 +21,7 @@ define apache::mod
     exec { 'a2enmod':
         command => "/usr/sbin/a2enmod ${mod}",
         creates => "/etc/apache2/mods-enabled/${mod}.conf",
-        require => Package['apache2'],
+        require => [Package['apache2'], Package[$package]],
         notify  => Service['apache2'],
     }
 
